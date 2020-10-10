@@ -1,5 +1,7 @@
+SBINDIR ?= /usr/sbin
+
 install:	install-scripts
 
 install-scripts:
-	install -d $(DESTDIR)/usr/sbin
-	install qubes-prepare-vm-kernel $(DESTDIR)/usr/sbin
+	install -d $(DESTDIR)$(SBINDIR)
+	install qubes-prepare-vm-kernel $(DESTDIR)$(SBINDIR)
